@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- INICIO DE PRUEBAS -->
+            <div class="mobile">
+                <button id="hmenu">
+                    <span class="material-icons">&#xe5d2;</span>
+                </button>
+                <ul class="links">
+                    <li><a href="#">La conferencia</a></li>
+                    <li><a href="#oradores">Los oradores</a></li>
+                    <li><a href="#lugar">El lugar y la fecha</a></li>
+                    <li><a href="#conviertete">Conviértete en orador</a></li>
+                    <li><a href="#">Comprar Tickets</a></li>
+                </ul>
+            </div>
+                <!-- fin DE PRUEBAS -->
+            <ul class="header-logo">
+                <li>
+                    <a href="#"><img src="./src/public/image/codoacodo.png" alt="Logo de codo a codo">
+                        <span>Conf Bs As</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header-links">
+                <li><a href="#">La conferencia</a></li>
+                <li><a href="#oradores">Los oradores</a></li>
+                <li><a href="#lugar">El lugar y la fecha</a></li>
+                <li><a href="#conviertete">Conviértete en orador</a></li>
+                <li><a href="#">Comprar Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="image-container">
+            <div>
+                <h1>Conf Bs As</h1>
+                <p>Bs As por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y expereiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                <div>
+                    <button>Quiero ser orador</button>
+                    <button>Comprar tickets</button>
+                </div>
+            </div>
+        </div>
+        <section id="oradores">
+            <span>CONOCE A LOS</span>
+            <H2>ORADORES</H2>
+            <div class="oradores-container">
+                <article>
+                    <img src="./src/public/image/steve.jpg" alt="">
+                    <div>
+                        <span class="javascript">JavaScript</span>
+                        <span class="react">React</span>
+                        <h3>Steve Jobs</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, tenetur quas commodi saepe fugiat vitae architecto voluptatibus consequatur porro perferendis accusantium. Vitae ullam id dolor laborum doloremque nam nesciunt aperiam!</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./src/public/image/bill.jpg" alt="">
+                    <div>
+                        <span class="javascript">JavaScript</span>
+                        <span class="react">React</span>
+                        <h3>Bill Gates</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, tenetur quas commodi saepe fugiat vitae architecto voluptatibus consequatur porro perferendis accusantium. Vitae ullam id dolor laborum doloremque nam nesciunt aperiam!</p>
+
+                    </div>
+                </article>
+                <article>
+                    <img src="./src/public/image/ada.jpeg" alt="">
+                    <div>
+                        <span class="negocios">Negocios</span>
+                        <span class="startsup">Startups</span>
+                        <h3>Ada Lovelace</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, tenetur quas commodi saepe fugiat vitae architecto voluptatibus consequatur porro perferendis accusantium. Vitae ullam id dolor laborum doloremque nam nesciunt aperiam!</p>
+
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="lugar">
+            <div class="image-place-container">
+                <img src="./src/public/image/honolulu.jpg" alt="">
+            </div>
+            <div class="data-container">
+                <h3>Bs As - Octubre</h3>
+                <p>Buenos Aires es la provincia y localidad más grande delñ estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al áre urbana en la cosra sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie)</p>
+                <button>Conocé más</button>
+            </div>
+        </section>
+        <section id="conviertete">
+            <p class="conviertete">CONVIÉRTETE EN UN</p>
+            <H4>ORADOR</H4>
+            <P>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</P>
+            <form action="#">
+                <div>
+                    <input type="text" placeholder="Nombre" required/>
+                    <input type="text" placeholder="Apellido" required/>
+                </div>
+                <textarea type="comment" placeholder="Sobre qué quieres hablar?"></textarea>
+                <small>Recuerda incluir un título para tu charla</small>
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#"> Contáctanos</a></li>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Conferencias</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./src/public/script/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-bg: rgb(53,58,64);
+    --font-color: rgb(42,163,68);
+    --button-color: rgb(41,167,68);
+    --javascript-bg: rgb(254,193,4);
+    --react-bg: rgb(23,162,185);
+    --negocios-bg: rgb(108,117,124);
+    --startsup-bg: rgb(220,53,70);
+    --data-bg: rgb(51,58,64);
+    --button-form-bg: rgb(150,201,62);
+    --footer-bg: rgb(29,73,98);
+}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100vw;
+    height: 9rem;
+    background-color: var(--header-bg);
+}
+header > nav {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    display: flex;
+}
+header > nav li {
+    list-style: none;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+}
+.header-logo img{
+    height: 10rem;
+}
+
+.header-logo a{
+    display: flex;
+    align-items: center;
+}
+.header-logo a span{
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+/*COMIENZO DE PRUEBAS*/
+.show {
+    display: flex !important;
+  }
+nav > .mobile{
+    display: none;
+    background-color: var(--header-bg);
+    width: 100%;
+    align-items: center;
+}
+nav > .mobile > button{
+    border: none;
+    background-color: transparent;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+nav > .mobile > button > span{
+    transform: rotate(0deg);
+  background: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav > .mobile > .links{
+    background-color: var(--header-bg);
+    display: none;
+    flex-direction: column;
+    height: 60vh;
+    top: 45px;
+    width: 100vw;
+    z-index: 100;
+    position: absolute;
+    font-size: 3rem;
+}
+nav > .mobile > .links li{
+    margin-top: 5rem;
+    padding: 3rem;
+}
+/*FIN DE PRUEBAS*/
+.header-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+    width: 70vw;
+}
+
+.header-links a {
+    color: rgb(155,159,162)
+}
+.header-links > li:nth-child(5) a{
+    color: var(--font-color);
+}
+.header-links > li > a:focus{
+    color: white
+}
+.header-links > li > a:hover{
+    color: white
+}
+main{
+    width: 100vw;
+}
+.image-container{
+    width: 100vw;
+    height: calc(100vh - 9rem);
+    background-image: url(../public/image/ba1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.image-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+.image-container > div{
+    height: 35rem;
+    width: 75rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0 12rem 13rem 0;
+}
+.image-container > div >p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+.image-container > div >h1{
+    font-size: 3.7rem;
+    color: white;
+}
+.image-container > div > div{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: end;
+}
+.image-container > div > div > button{
+    height: 5rem;
+    width: 23rem;
+    font-size: 2rem;
+    color: white;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 0.3 solid white;
+    cursor: pointer;
+}
+.image-container > div > div > button:nth-child(2){
+    background-color: var(--button-color);
+    border: none;
+}
+#oradores{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    
+}
+#oradores > span{
+    padding: 1rem 0;
+    font-size: 1.3rem;
+}
+#oradores > h2{
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 0rem;
+}
+#oradores > .oradores-container{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+}
+.oradores-container > article{
+    width: 35rem;
+    height: 75rem;
+    margin-bottom: 3.5rem;
+    margin-top: 0.7rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    border: solid 1px rgba(189, 187, 187,0.5)
+}
+.oradores-container > article:nth-child(1){
+    margin-left: 3rem;
+}
+.oradores-container > article:nth-child(3){
+    margin-right: 3rem;
+}
+.oradores-container > article > img{
+    width: 100%;
+    height: 35rem;
+}
+.oradores-container > article > div{
+    padding: 2rem;
+    text-align: left;
+}
+.oradores-container > article > div > span{
+   font-size: 1.4rem;
+   font-weight: 700;
+   border-radius: 0.5rem;
+   padding: 0.2rem 0.5rem;
+   
+}
+.react{
+    margin-left: 0.5rem;
+    background-color: var(--react-bg);
+    color: white;
+}
+.javascript{
+    background-color: var(--javascript-bg);
+    color: black;
+}
+.negocios{
+    background-color: var(--negocios-bg);
+    color: white;
+}
+.startsup{
+    background-color: var(--startsup-bg);
+    color: white;
+}
+.oradores-container > article > div > h3{
+    margin-top: 0.3rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.oradores-container > article > div > p{
+    line-height: 3rem;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    word-spacing: 0.3rem;
+}
+#lugar{
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    gap: 0.1rem;
+}
+.image-place-container{
+    width: 50%;
+}
+.image-place-container > img{
+    width: 100%;
+    height: 60rem;
+    object-fit: cover;
+}
+.data-container{
+    width: 50%;
+    background-color: var(--data-bg);
+    padding: 3rem 3rem 0 1.5rem;
+}
+
+.data-container > h3{
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+}
+.data-container > p{
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: white;
+}
+.data-container > button{
+    padding: 0.7rem 1rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    color: white;
+}
+#conviertete{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+#conviertete > p{
+    font-size: 1.5rem;
+}
+.conviertete{
+    font-size: 1.2rem !important;
+    color: rgb(85, 85, 85);
+}
+
+#conviertete > h4{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+#conviertete > form{
+    width: 62rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.3rem;
+}
+#conviertete > form > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 3rem;
+}
+#conviertete > form > div input{
+    width: 50%;
+    height: 100%;
+    border-radius: 0.7rem;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    color: rgb(105, 105, 105);
+    border: 1px solid rgb(172, 171, 171);
+}
+#conviertete > form > textarea{
+    margin-top: 1.5rem;
+    border-radius: 0.7rem;
+    height: 12rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    padding: 1.3rem;
+    border: 1px solid rgb(172, 171, 171);
+    color: rgb(105, 105, 105);
+}
+#conviertete > form > small{
+    font-size: 1.3rem;
+    color: rgb(151, 151, 151);
+    margin-bottom: 1.5rem ;
+}
+#conviertete > form > button{
+    height: 2.5em;
+    font-size: 1.8rem;
+    color: white;
+    border: none;
+    border-radius: 0.7rem;
+    background-color: var(--button-form-bg);
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 10rem;
+    background-color: var(--footer-bg);
+}
+footer nav{
+    height: 100%;
+    padding: 0 3rem;
+}
+footer ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    background-color: var(--footer-bg);
+}
+footer li{
+    list-style: none;
+    cursor: pointer;
+    width: 13rem;
+    text-align: center;
+
+}
+footer a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+@media (min-width: 901px) and (max-width: 1023px){
+    html{
+        font-size: 8px;
+    }
+    .image-container > div{
+        gap: 3rem;
+        margin: 0 3rem 4rem 0;
+    }
+    #oradores > .oradores-container{
+        gap: 2rem;
+    }
+}
+@media (min-width: 481px) and (max-width: 900px){
+    html{
+        font-size: 6px;
+    }
+    nav > .mobile{
+        display: flex;
+        width: 30%;
+    }
+    .header-links{
+        display: none;
+    }
+    .image-container > div{
+        gap: 3rem;
+        margin: 0 3rem 4rem 0;
+    }
+    #oradores > .oradores-container{
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px){
+    html{
+        font-size: 5px;
+    }
+    .header-logo{
+        display: none
+    }
+    nav > .mobile{
+        display: flex;
+    }
+    .header-links{
+        display: none;
+    }
+    .image-container > div{
+        gap: 3rem;
+        margin: 0 3rem 4rem 0;
+    }
+    #oradores > .oradores-container{
+        flex-direction: column;
+    }
+    
+}
+
+
