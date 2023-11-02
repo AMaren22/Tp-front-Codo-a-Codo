@@ -16,6 +16,14 @@
     --data-bg: rgb(51,58,64);
     --button-form-bg: rgb(150,201,62);
     --footer-bg: rgb(29,73,98);
+    --tickets-border-estudiante: rgb(0,123,255);
+    --tickets-border-trainee: rgb(23,162,184);
+    --tickets-border-junior: rgb(255,193,7);
+    --tickets-border-shadow: rgb(223,223,223);
+    --tickets-bg-buttons: rgb(155,201,62);
+    --tickets-form-text-bg: rgb(204,229,255);
+    --tickets-form-text-border: rgb(184,218,255);
+    --tickets-form-text: rgb(0,64,133);
 }
 html{
     font-size: 10px;
@@ -64,6 +72,146 @@ header a {
 .show {
     display: flex !important;
   }
+.main-tickets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.students-container{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+.students-container > div{
+    width: 26.7rem;
+    height: 22rem;
+    box-shadow:  0 0 0 1px var(--tickets-border-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+.students-container > div:nth-child(1){
+    border: 2px solid var(--tickets-border-estudiante);
+}
+.students-container > div:nth-child(2){
+    border: 2px solid var(--tickets-border-trainee);
+}
+.students-container > div:nth-child(3){
+    border: 2px solid var(--tickets-border-junior);
+}
+.students-container > div > h5{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.students-container > div > p {
+    font-size: 1.5rem;
+}
+.students-container > div > h6{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.students-container > div > small {
+    font-size: 1.3rem;
+    color: rgb(170, 170, 170);
+}
+.main-tickets > p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.main-tickets > h2 {
+    font-size: 3.5rem;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.main-tickets > form{
+    width: 60%;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-container > input{
+    width: 49%;
+
+}
+.main-tickets > form  input {
+    height: 3.5rem;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+.label-inputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.label-inputs > label {
+    width: 49%;
+    font-size: 1.5rem;
+}.label-inputs > label > input{
+    margin-top: 1rem;
+    width: 100%;
+}
+.label-inputs > label > select {
+    width: 100%;
+    height: 3.5rem;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    color: rgb(116, 116, 116);
+    background-color: white;
+}
+.main-tickets > form > input {
+    width: 100%;
+}
+
+.text-container{
+    background-color: var(--tickets-form-text-bg);
+    height: 6rem;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 2px solid var(--tickets-form-text-border);
+    margin-top: 2rem;
+}
+.text-container > p {
+    font-size: 1.7rem;
+    color: var(--tickets-form-text);
+    
+}
+.tickets-button-container{
+    margin-top: 4rem ;
+    margin-bottom: 2rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tickets-button-container > button {
+    border: none;
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 49%;
+    background-color: var(--tickets-bg-buttons);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
 nav > .mobile{
     display: none;
     background-color: var(--header-bg);
@@ -439,7 +587,7 @@ footer a {
 }
 @media (max-width: 480px){
     html{
-        font-size: 5px;
+        font-size: 3px;
     }
     .header-logo{
         display: none
@@ -455,6 +603,9 @@ footer a {
         margin: 0 3rem 4rem 0;
     }
     #oradores > .oradores-container{
+        flex-direction: column;
+    }
+    .students-container{
         flex-direction: column;
     }
     

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="../src/style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- INICIO DE PRUEBAS -->
+            <div class="mobile">
+                <button id="hmenu">
+                    <span class="material-icons">&#xe5d2;</span>
+                </button>
+                <ul class="links">
+                    <li><a href="../index.html#">La conferencia</a></li>
+                    <li><a href="../index.html#oradores">Los oradores</a></li>
+                    <li><a href="../index.html#lugar">El lugar y la fecha</a></li>
+                    <li><a href="../index.html#conviertete">Conviértete en orador</a></li>
+                    <li><a href="#">Comprar Tickets</a></li>
+                </ul>
+            </div>
+                <!-- fin DE PRUEBAS -->
+            <ul class="header-logo">
+                <li>
+                    <a href="../index.html">
+                        <span>Conf Bs As</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header-links">
+                <li><a href="../index.html#">La conferencia</a></li>
+                <li><a href="../index.html#oradores">Los oradores</a></li>
+                <li><a href="../index.html#lugar">El lugar y la fecha</a></li>
+                <li><a href="../index.html#conviertete">Conviértete en orador</a></li>
+                <li><a href="#">Comprar Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-tickets">
+        <div class="students-container">
+            <div>
+                <h5>Estudiante</h5>
+                <p>Tiene un descuento</p>
+                <h6>80%</h6>
+                <small>* presentar documentación</small>
+            </div>
+            <div>
+                <h5>Trainee</h5>
+                <p>Tiene un descuento</p>
+                <h6>50%</h6>
+                <small>* presentar documentación</small>
+            </div>
+            <div>
+                <h5>Junior</h5>
+                <p>Tiene un descuento</p>
+                <h6>15%</h6>
+                <small>* presentar documentación</small>
+            </div>
+        </div>
+        <p>Venta</p>
+        <h2>VALOR DE TICKET $200</h2>
+        <form  action="#">
+            <div class="input-container">
+                <input id="name" type="text" required placeholder="Nombre">
+                <input id="surname" type="text" required placeholder="Apellido">
+            </div>
+            <input id="email" type="email" required placeholder="Correo">
+            <div class="label-inputs">
+                <label for="">Cantidad <br>
+                    <input id="cantidad" required="text" placeholder="Cantidad">
+                </label>
+                <label for="">Categoria <br>
+                    <select  required name="" id="selector">
+                        <option selected value="0.8">Estudiante</option>
+                        <option value="0.5">Trainee</option>
+                        <option value="0.15">Juniors</option>
+                        <option value="1">Sin descuento</option>
+                    </select>
+                </label>
+            </div>
+            <div class="text-container">
+                <p>
+                    Total a pagar: $ <span id="total"></span>
+                </p>
+            </div>
+            <div class="tickets-button-container">
+                <button id="delete" >Borrar</button>
+                <button type="submit">Resumen</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#"> Contáctanos</a></li>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Conferencias</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="../src/public/script/menu.js"></script>
+    <script src="../src/public/script/scripts.js"></script>
+</body>
+</html>
